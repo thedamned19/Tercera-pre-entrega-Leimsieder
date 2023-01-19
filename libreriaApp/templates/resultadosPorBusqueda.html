@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<h1>Estamos buscando el libro: {{titulo}}</h1>
+
+{% if libros %}
+
+<ul>
+{% for libro in libros %}
+    <li>Nombre - {{libro.titulo}}</li>
+    <li>Género - {{libro.tipo}}</li>
+{% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<h1>Lectores</h1>
+
+{% for lector in lectores %}
+
+<div>
+    <h3>{{lector.nombre}}  -  {{lector.estado}}</h3>
+</div>
+
+
+{% endfor %}
+
+{% endblock %}

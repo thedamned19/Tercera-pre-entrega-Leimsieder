@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Ciudad Vieja</title>
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}"
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'crear_libro' %}">Crear Libro</a>
+            </li>
+            <li>
+                <a href="{% url 'libros' %}">Libros</a>
+            </li>
+            <li>
+                <a href="{% url 'crear_lector' %}">Crear Lector</a>
+            </li>
+            <li>
+                <a href="{% url 'lectores' %}">Lectores</a>
+            </li>
+            <li>
+                <a href="{% url 'crear_autor' %}">Crear Autor</a>
+            </li>
+            <li>
+                <a href="{% url 'autores' %}">Autores</a>
+            </li>
+
+            <li>
+                <a href="{% url 'prestamos' %}">Prestamos</a>
+            </li>
+            <li>
+                <a href="{% url 'busquedaLibro' %}">Buscar</a>
+            </li>
+        </ul>
+    </nav>
+    
+    {% block content %}
+    {% endblock %}
+    
+</body>
+</html>

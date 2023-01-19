@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<h1>Libros</h1>
+
+{% for libro in libros %}
+
+<div>
+    <h3>{{libro.titulo}}  -  {{libro.tipo}}</h3>
+</div>
+
+
+{% endfor %}
+
+{% endblock %}

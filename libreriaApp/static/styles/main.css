@@ -1,0 +1,27 @@
+body {
+    background: black;
+    color:blueviolet
+}
+
+.navbar {
+    background: #414142;
+    padding: 5px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color:chocolate
+}

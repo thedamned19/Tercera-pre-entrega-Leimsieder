@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<h1>Prestamos</h1>
+
+{% for prestamo in prestamos %}
+
+<div>
+    <div>
+        <h3>{{prestamo.fecha_entrega}} - {{prestamo.fecha_devolucion}}
+        {% if prestamo.multa == False %}
+        <p>Sin multa</p>
+        {% else %}
+        <p>Tiene multa</p>
+        {% endif %}
+        </h3>
+    </div>
+</div>
+
+
+{% endfor %}
+
+{% endblock %}
